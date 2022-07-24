@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/playlist.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/d453d24616.js" crossorigin="anonymous"></script>    
+    <title>SoundTap</title>
+    <title>SoundTap</title>
+</head>
+<body>
+    <div class="main">
+        <div class="grid wide">
+            <div class="row">
+                <div class="menu-container col l-3">
+                    <a href="" class="heading">
+                        <i class="heading-icon fa-solid fa-music"></i>                    
+                        <h3 class="heading-content">SoundTap</h3>
+                    </a>
+                    <ul class="menu-list ">
+                        <li class="menu-item menu-item--active">
+                            <a href="" class="menu-item-link">
+                                <i class="menu-item-icon fa-solid fa-house-user"></i>
+                                Home                                
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <i class="menu-item-icon fa-solid fa-compact-disc"></i>                                
+                                Your Library                                
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <i class="menu-item-icon fa-solid fa-square-plus"></i>                              
+                                Create Playlist                                
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="menu-item-link">
+                                <i class="menu-item-icon fa-solid fa-heart"></i>                                
+                                Liked Songs                          
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="app-container col l-5">
+                    <div class="search">
+                        <input class= "search-input" placeholder="Search..." autocomplete="off" type="text" placeholder="Search">
+                        <a href="" class="search-icon-link">
+                            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                    <div class="play-list-container">
+                        <p class="playlist-heading">Recommended for you</p>
+                    <div class="row">
+                        <div class="col l-12">
+                            <div class="row">
+                                <div class="playlist-item col l-6">
+                                    <div class="playlist-item-img" style="background-image: url(./img/Playlist1.png)">
+                                    </div>
+                                    <p class="playlist-item__name">Nam's SoundCloud</p>
+                                </div>
+                                
+                                <div class="playlist-item col l-6">
+                                    <div class="playlist-item-img" style="background-image: url(./img/Playlist2.png);">
+                                    </div>
+                                    <p class="playlist-item__name">Beat Track</p>
+                                </div>
+
+                                <div class="playlist-item col l-6">
+                                    <div class="playlist-item-img" style="background-image: url(./img/Playlist3.png);">
+                                    </div>
+                                    <p class="playlist-item__name">Nha Mod</p>
+                                </div>
+                                <div class="playlist-item col l-6">
+                                    <div class="playlist-item-img" style="background-image: url(./img/Playlist4.png);">
+                                    </div>
+                                    <p class="playlist-item__name">TayNguyenSound</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="player-container col l-4">
+                    <div class="player-waiting">
+                        <img src="./img/ezgif-1-aa48b70823.jpg" alt="" class = "player-waiting-img">
+                        <p class="player-waiting-content">Choose one playlist</p>
+                        <div class="player-waiting-icon">
+                            <i class="fa-solid fa-circle-left"></i>                    
+                            <i class="fa-solid fa-circle-left"></i>                    
+                            <i class="fa-solid fa-circle-left"></i>                    
+                            <i class="fa-solid fa-circle-left"></i>                    
+                            <i class="fa-solid fa-circle-left"></i>  
+                        </div>
+                    </div>
+                    <div class="playing-song">
+                        <div class="playing-heading-container">
+                            <div class="playing-thumb-cd"> </div>
+                            <div class="playing-heading-wrap">                            
+                                <p class="play-heading"> Now playing</p>
+                                <h3 class="playing-song-name"></h3>
+                                <p class="playing-song-singer"></p>
+                            </div>
+                        </div>
+                        
+                        <ul class="playing-song-options">
+                            <li class="btn-replay playing-song-options-item">
+                                <i class="fa-solid fa-rotate-left"></i>
+                            </li>
+                            <li class="btn-back playing-song-options-item ">
+                                <i class="fa-solid fa-backward-step"></i>
+                            </li>
+                            <li class="btn-play-pause pausing playing-song-options-item active">
+                                <i class="song-option-icon-playing fa-solid fa-circle-play"></i>
+                                <i class="song-option-icon-pause fa-solid fa-circle-pause"></i>
+                            </li>
+                            <li class="btn-next playing-song-options-item">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </li>
+
+                            <li class="btn-shuffle playing-song-options-item">
+                                <i class="fa-solid fa-shuffle"></i>
+                            </li>
+                        </ul>
+                        <input id="progress" class="progress" type="range" value="0" step="0.1" min="0" max="100">
+                        <audio src="" id="audio"></audio>
+                    </div>
+                    <div class="playlist-songs">
+                        <div class="playlist-song-item active">
+                            <div class="song-item-img" style="background-image: url(./img/ixWsye8ZgBo-SD.jpg)"></div>
+
+                            <div class="playlist-song-item-desc">
+                                <p class="song-item-name">Only u</p>
+                                <p class="song-item-singer">EDOBY</p>
+                            </div>
+                            <i class="song-item-ellipsis fa-solid fa-ellipsis"></i>    
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+    <script src="./main.js"></script>
+</html>

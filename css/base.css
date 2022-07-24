@@ -1,0 +1,43 @@
+:root{
+    --primary-color: #F7FAFF;
+    --nav-color: #;
+    --text-color: #333;
+    --border-color: #dbdbdb; 
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    line-height: 1.6rem;
+    font-family: 'Oswald';font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin:0;
+}
+
+/* Desgin scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
