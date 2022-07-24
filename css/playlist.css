@@ -302,9 +302,10 @@
     margin: 20px 10px;
 }
 .song-item-name{
-    margin:0 0 5px 0;
-    font-size: 2rem;
+    margin:0;
+    font-size: 1.8rem;
     font-weight: 500;
+    line-height: 2rem;
 }
 .song-item-singer{
     margin: 0;
@@ -341,6 +342,43 @@
 }
 .player-waiting-img{
     margin-top: 40%;
-    width: 300px;
+    width: 60%;
     border-radius: 40px;
+}
+.playlist-mobile{
+    height: 90px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.playlist-mobile-img{
+    padding-top: 85px;
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    border-radius: 0.4rem;
+    margin: 0;
+    position: relative;
+    margin-left: calc((100vw / 4 - 85px)/2)
+}
+.playlist-item-mobile-img{
+    padding-top: 150px;
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    border-radius: 0.4rem;
+    margin: 0 calc((100vw / 2 - 150px)/2);
+    cursor: pointer;
+}
+.playlist-item-mobile__name{
+    text-align: center;
+    margin: 0px  0 25px 0px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color)
+}
+.playlist-mobile-select{
+    padding-top: 20px;
+    display: none;
+}
+.playlist-mobile-list{
+    display: none;
 }

@@ -196,7 +196,7 @@ const app = {
             img: './music/song3/img3.jpg'
         },
         {
-            name: 'Có Một Người, Luôn Cười Khi Anh Đến',
+            name: 'Có 1 Người, Luôn Cười Khi Anh Đến',
             singer: 'Tofu, PC & D.Blue (Prod. by 1nG)',
             track: './music/song3/track4.mp3',
             img: './music/song3/img4.jpg'
@@ -265,6 +265,9 @@ const app = {
         })
         playlist.innerHTML = htmls.join('') 
         app.cdThumbAnimate.pause()
+
+
+
     }, 
     renderCurrentSong: function(songs){
         const now_song_in_list = $(`.playlist-song-item:nth-child(${this.currentIndex + 1})`)  
@@ -404,8 +407,7 @@ const app = {
                 btnNext.click();
             }
         }
-    },
-    
+    }, 
     start: function(songs) {
         this.renderPlaylist(songs);
         this.renderCurrentSong(songs)
@@ -417,47 +419,54 @@ const app = {
     }
 }
 
-const playlistItems  = $$('.playlist-item')
-const playerWaiting = $('.player-waiting')
-for (let i = 0; i < playlistItems.length; i++) {
-    playlistItems[i].onclick = () => {
-        playerWaiting.style.display = 'none'
-        app.currentIndex=0;
-        if(app.isPlay) btnPlayPause.click()
-        if(app.isReplay) btnReplay.click()
-        if(app.isShuffle) btnShuffle.click()
-        if(i==0) {
-            app.start(app.songs0)
-            playlistItems[i].classList.add('playlist-item--active')
-            const songItemActive = $('.playlist-song-item.active')
-            songItemActive.style.backgroundColor = 'rgba(42,40,40,0.3)'
-            btnPlayPause.click()
-        }
-        else if(i==1) {
-            app.start(app.songs1)
-            playlistItems[i].classList.add('playlist-item--active')
-            const songItemActive = $('.playlist-song-item.active')
-            songItemActive.style.backgroundColor = 'rgb(78,168,222,0.3)'
-            btnPlayPause.click()
+function playListClick(i){
+    playerWaiting.style.display = 'none'
+    app.currentIndex=0;
+    if(app.isPlay) btnPlayPause.click()
+    if(app.isReplay) btnReplay.click()
+    if(app.isShuffle) btnShuffle.click()
+    if(i==0) {
+        app.start(app.songs0)
+        playlistItems[i].classList.add('playlist-item--active')
+        const songItemActive = $('.playlist-song-item.active')
+        songItemActive.style.backgroundColor = 'rgba(42,40,40,0.3)'
+        btnPlayPause.click()
+    }
+    else if(i==1) {
+        app.start(app.songs1)
+        playlistItems[i].classList.add('playlist-item--active')
+        const songItemActive = $('.playlist-song-item.active')
+        songItemActive.style.backgroundColor = 'rgb(78,168,222,0.3)'
+        btnPlayPause.click()
 
-        }
-        else if(i==2) {
-            app.start(app.songs2)
-            playlistItems[i].classList.add('playlist-item--active')
-            const songItemActive = $('.playlist-song-item.active')
-            songItemActive.style.backgroundColor = 'rgb(133,24,42,0.3)'
-            btnPlayPause.click()
+    }
+    else if(i==2) {
+        app.start(app.songs2)
+        playlistItems[i].classList.add('playlist-item--active')
+        const songItemActive = $('.playlist-song-item.active')
+        songItemActive.style.backgroundColor = 'rgb(133,24,42,0.3)'
+        btnPlayPause.click()
 
-        }
-        else if(i==3) {
-            app.start(app.songs3)
-            playlistItems[i].classList.add('playlist-item--active')
-            const songItemActive = $('.playlist-song-item.active')
-            songItemActive.style.backgroundColor = 'rgb(165,148,249,0.3)'
-            btnPlayPause.click()
-        }
-        for (let j = 0; j < playlistItems.length; j++) {
-            if(j!=i) playlistItems[j].classList.remove('playlist-item--active')
-        }
+    }
+    else if(i==3) {
+        app.start(app.songs3)
+        playlistItems[i].classList.add('playlist-item--active')
+        const songItemActive = $('.playlist-song-item.active')
+        songItemActive.style.backgroundColor = 'rgb(165,148,249,0.3)'
+        btnPlayPause.click()
+    }
+    for (let j = 0; j < playlistItems.length; j++) {
+        if(j!=i) playlistItems[j].classList.remove('playlist-item--active')
     }
 }
+const playlistItems  = $$('.playlist-item')
+const playlistItemsMobile = $$('.playlist-item-mobile') 
+const playerWaiting = $('.player-waiting')
+const playListnav = $$('.playlist-mobile')
+for (let i = 0; i < playlistItems.length; i++) {
+    playlistItems[i].onclick = () => playListClick(i)
+    playlistItemsMobile[i].onclick = () => playListClick(i)
+    playListnav[i].onclick =() => playListClick(i)
+}
+
+

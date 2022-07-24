@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/playlist.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/d453d24616.js" crossorigin="anonymous"></script>    
@@ -18,7 +19,7 @@
     <div class="main">
         <div class="grid wide">
             <div class="row">
-                <div class="menu-container col l-3">
+                <div class="menu-container col l-3 m-0 c-0">
                     <a href="" class="heading">
                         <i class="heading-icon fa-solid fa-music"></i>                    
                         <h3 class="heading-content">SoundTap</h3>
@@ -50,7 +51,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="app-container col l-5">
+                <div class="app-container col l-5 m-6 c-0">
                     <div class="search">
                         <input class= "search-input" placeholder="Search..." autocomplete="off" type="text" placeholder="Search">
                         <a href="" class="search-icon-link">
@@ -60,37 +61,36 @@
                     <div class="play-list-container">
                         <p class="playlist-heading">Recommended for you</p>
                     <div class="row">
-                        <div class="col l-12">
+                        <div class="col l-12 m-12 c-12">
                             <div class="row">
-                                <div class="playlist-item col l-6">
+                                <div class="playlist-item col l-6 m-6 c-6">
                                     <div class="playlist-item-img" style="background-image: url(./img/Playlist1.png)">
                                     </div>
                                     <p class="playlist-item__name">Nam's SoundCloud</p>
                                 </div>
                                 
-                                <div class="playlist-item col l-6">
+                                <div class="playlist-item col l-6 m-6 c-6">
                                     <div class="playlist-item-img" style="background-image: url(./img/Playlist2.png);">
                                     </div>
                                     <p class="playlist-item__name">Beat Track</p>
                                 </div>
 
-                                <div class="playlist-item col l-6">
+                                <div class="playlist-item col l-6 m-6 c-6">
                                     <div class="playlist-item-img" style="background-image: url(./img/Playlist3.png);">
                                     </div>
                                     <p class="playlist-item__name">Nha Mod</p>
                                 </div>
-                                <div class="playlist-item col l-6">
+                                <div class="playlist-item col l-6 m-6 c-6">
                                     <div class="playlist-item-img" style="background-image: url(./img/Playlist4.png);">
                                     </div>
                                     <p class="playlist-item__name">TayNguyenSound</p>
-                                </div>
-                                
+                                </div>         
                             </div>
                         </div>
-                    </div>
+                    </div>  
                     </div>
                 </div>
-                <div class="player-container col l-4">
+                <div class="player-container col l-4 m-6 c-12">
                     <div class="player-waiting">
                         <img src="./img/ezgif-1-aa48b70823.jpg" alt="" class = "player-waiting-img">
                         <p class="player-waiting-content">Choose one playlist</p>
@@ -101,7 +101,34 @@
                             <i class="fa-solid fa-circle-left"></i>                    
                             <i class="fa-solid fa-circle-left"></i>  
                         </div>
-                    </div>
+                        <div class="col l-12 m-12 c-12">
+                            <div class="playlist-mobile-select row">
+                                <div class="playlist-item-mobile col l-6 m-6 c-6">
+                                    <div class="playlist-item-mobile-img" style="background-image: url(./img/Playlist1.png)">
+                                    </div>
+                                    <p class="playlist-item-mobile__name">Nam's SoundCloud</p>
+                                </div>
+                                
+                                <div class="playlist-item-mobile col l-6 m-6 c-6">
+                                    <div class="playlist-item-mobile-img" style="background-image: url(./img/Playlist2.png);">
+                                    </div>
+                                    <p class="playlist-item-mobile__name">Beat Track</p>
+                                </div>
+
+                                <div class="playlist-item-mobile col l-6 m-6 c-6">
+                                    <div class="playlist-item-mobile-img" style="background-image: url(./img/Playlist3.png);">
+                                    </div>
+                                    <p class="playlist-item-mobile__name">Nha Mod</p>
+                                </div>
+                                <div class="playlist-item-mobile col l-6 m-6 c-6">
+                                    <div class="playlist-item-mobile-img" style="background-image: url(./img/Playlist4.png);">
+                                    </div>
+                                    <p class="playlist-item-mobile__name">TayNguyenSound</p>
+                                </div>         
+                            </div>
+                        </div>
+                    </div>  
+                
                     <div class="playing-song">
                         <div class="playing-heading-container">
                             <div class="playing-thumb-cd"> </div>
@@ -146,8 +173,25 @@
                         </div>
 
                     </div>
+                    <div class="row playlist-mobile-list">
+                            <div class="playlist-mobile col c-3">
+                                <div class="playlist-mobile-img" style="background-image: url(./img/Playlist1.png)">
+                                </div>
+                            </div>
+                            <div class="playlist-mobile col c-3">
+                                <div class="playlist-mobile-img" style="background-image: url(./img/Playlist2.png)">
+                                </div>
+                            </div>
+                            <div class="playlist-mobile col c-3">
+                                <div class="playlist-mobile-img" style="background-image: url(./img/Playlist3.png)">
+                                </div>
+                            </div>
+                            <div class="playlist-mobile col c-3">
+                                <div class="playlist-mobile-img" style="background-image: url(./img/Playlist4.png)">
+                                </div>
+                            </div>
+                    </div>
                 </div>
-                
             </div>
 
         </div>

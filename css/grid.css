@@ -141,6 +141,7 @@
 }
 
 /* >= Tablet */
+/* ---m--- */
 @media (min-width: 740px) {
     .row {
         margin-left: -8px;
@@ -277,6 +278,7 @@
 }
 
 /* PC medium resolution > */
+/* ---l---- */
 @media (min-width: 1113px) {
     .row {
         margin-left: -12px;
