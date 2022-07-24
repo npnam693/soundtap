@@ -1,14 +1,14 @@
 .menu-container {
     height: 100vh;
     width: 100%;
-    background-color: #f7faff;
+    background-color: var(--primary-color);
     position: relative;
 }
 .menu-container::after{
     content: "";
     height: 100%;
     width: 15px;
-    background-image: linear-gradient(to right, #ecf4fa, #F7FAFF);
+    background-image: linear-gradient(to right, #ecf4fa, var(--primary-color));
     position: absolute;
     top:0;
     right: 0px;
@@ -92,7 +92,7 @@
     content: "";
     height: 82vh;
     width: 15px;
-    background-image: linear-gradient(to left, #ecf4fa, #F7FAFF);
+    background-image: linear-gradient(to left, #ecf4fa, var(--primary-color));
     position: absolute;
     top: 8vh;
     right: -5px;
@@ -326,7 +326,7 @@
     position: fixed;
     width: 370px;
     height: 524px;
-    background-color: #f7faff;
+    background-color: var(--primary-color);
     z-index: 1;
     text-align: center;
 }
