@@ -4,15 +4,6 @@
     background-color: var(--primary-color);
     position: relative;
 }
-.menu-container::after{
-    content: "";
-    height: 100%;
-    width: 15px;
-    background-image: linear-gradient(to right, #ecf4fa, var(--primary-color));
-    position: absolute;
-    top:0;
-    right: 0px;
-}
 .heading{
     display: flex;
     text-decoration: none;
@@ -87,15 +78,24 @@
 .app-container {
     position: relative;
 }
-
-.app-container::before{
+.app-container::after {
     content: "";
-    height: 82vh;
+    height: 580px;
     width: 15px;
     background-image: linear-gradient(to left, #ecf4fa, var(--primary-color));
     position: absolute;
-    top: 8vh;
-    right: -5px;
+    top: -20px;
+    right: -15px;
+}
+
+.menu-container::after {
+    content: "";
+    height: 580px;
+    width: 15px;
+    background-image: linear-gradient(to right, #ecf4fa, var(--primary-color));
+    position: absolute;
+    top: -20px;
+    right: 0px;
 }
 .search{
     margin-left: 30px;
@@ -271,7 +271,7 @@
 .playlist-songs{
     margin-top: 10px;
     overflow-y: scroll;
-    max-height: 360px;
+    max-height: 330px;
     scrollbar-width: none;
     box-shadow: 0 3px 20px 0 rgb(0 0 0 / 10%);
 
@@ -285,12 +285,13 @@
     margin: 10px 0px;
     cursor: pointer;
 }
+
 .playlist-song-item:hover{
     background-color: rgb(228, 222, 222, 0.2);
 }
 
 .playlist-song-item.active{
-    background-color: #ccc;
+    background-color: var(--list-color);
     border-radius: 5px;
 }
 .song-item-img{
@@ -329,6 +330,7 @@
     background-color: var(--primary-color);
     z-index: 1;
     text-align: center;
+    right: 65px;
 }
 .player-waiting-content{
     font-size: 2.5rem;
@@ -341,7 +343,7 @@
     color: rgb(12, 58, 87);
 }
 .player-waiting-img{
-    margin-top: 40%;
+    margin-top: 50%;
     width: 60%;
     border-radius: 40px;
 }

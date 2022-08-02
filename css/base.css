@@ -3,6 +3,8 @@
     --nav-color: #;
     --text-color: #333;
     --border-color: #dbdbdb; 
+
+    --list-color: #ccc
 }
 
 *{
@@ -41,3 +43,8 @@ body {
     background: #555;
   }
   
+  .main{
+    margin-top: calc((100vh - 690px) / 2);
+    height: 600px;
+    overflow: hidden;
+  }

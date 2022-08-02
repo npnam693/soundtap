@@ -429,14 +429,15 @@ function playListClick(i){
         app.start(app.songs0)
         playlistItems[i].classList.add('playlist-item--active')
         const songItemActive = $('.playlist-song-item.active')
-        songItemActive.style.backgroundColor = 'rgba(42,40,40,0.3)'
+        document.documentElement.style.setProperty('--list-color', 'rgba(42,40,40,0.3)');
+
         btnPlayPause.click()
     }
     else if(i==1) {
         app.start(app.songs1)
         playlistItems[i].classList.add('playlist-item--active')
         const songItemActive = $('.playlist-song-item.active')
-        songItemActive.style.backgroundColor = 'rgb(78,168,222,0.3)'
+        document.documentElement.style.setProperty('--list-color', 'rgb(78,168,222,0.3)');
         btnPlayPause.click()
 
     }
@@ -444,7 +445,7 @@ function playListClick(i){
         app.start(app.songs2)
         playlistItems[i].classList.add('playlist-item--active')
         const songItemActive = $('.playlist-song-item.active')
-        songItemActive.style.backgroundColor = 'rgb(133,24,42,0.3)'
+        document.documentElement.style.setProperty('--list-color', 'rgb(133,24,42,0.3)');
         btnPlayPause.click()
 
     }
@@ -452,7 +453,7 @@ function playListClick(i){
         app.start(app.songs3)
         playlistItems[i].classList.add('playlist-item--active')
         const songItemActive = $('.playlist-song-item.active')
-        songItemActive.style.backgroundColor = 'rgb(165,148,249,0.3)'
+        document.documentElement.style.setProperty('--list-color', 'rgb(165,148,249,0.3)');
         btnPlayPause.click()
     }
     for (let j = 0; j < playlistItems.length; j++) {
