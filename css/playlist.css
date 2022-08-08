@@ -247,8 +247,6 @@
     display: none;
 }
 
-
-
 .progress {
     width: 100%;
     -webkit-appearance: none;
@@ -271,7 +269,7 @@
 .playlist-songs{
     margin-top: 10px;
     overflow-y: scroll;
-    max-height: 330px;
+    max-height: 380px;
     scrollbar-width: none;
     box-shadow: 0 3px 20px 0 rgb(0 0 0 / 10%);
 
@@ -330,7 +328,6 @@
     background-color: var(--primary-color);
     z-index: 1;
     text-align: center;
-    right: 0;
 }
 .player-waiting-content{
     font-size: 2.5rem;

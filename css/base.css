@@ -45,6 +45,6 @@ body {
   
   .main{
     margin-top: calc((100vh - 690px) / 2);
-    height: 600px;
+    height: 640px;
     overflow: hidden;
   }
